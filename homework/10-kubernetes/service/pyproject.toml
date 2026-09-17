@@ -1,0 +1,23 @@
+[project]
+name = "service"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rferper", email = "raquelfernandezperalta@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.141.1",
+    "numpy>=2.5.3",
+    "onnxruntime>=1.30.0",
+    "pillow>=12.3.0",
+    "uvicorn>=0.53.0",
+]
+
+[project.scripts]
+service = "service:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
