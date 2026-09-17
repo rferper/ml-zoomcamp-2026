@@ -1,0 +1,8 @@
+.venv/
+data/
+*.onnx
+*.onnx.data
+*.keras
+*.bin
+output.json
+__pycache__/
